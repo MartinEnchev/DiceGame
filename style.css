@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(to top left, yellow 0%, green 100%);
+  font-size: 2rem;
+  display: flex;
+  position: relitive;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: rgb(48, 10, 10);
+}
+
+.section {
+  height: 100vh;
+  width: 50%;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active {
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 175, 1) 0%,
+    rgb(255, 217, 0) 100%
+  );
+}
+
+.sectionScore {
+  background-color: yellowgreen;
+  padding: 2rem;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.btn {
+  border: 3px solid gray;
+  background-color: black;
+  color: yellow;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0.5rem 1rem 2rem 0 rgb(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  border: 3px solid rgb(156, 156, 156);
+  background-color: rgb(46, 46, 46);
+  color: rgb(255, 255, 103);
+}
+
+.btn:active {
+  border: 3px solid rgb(240, 236, 2);
+  background-color: rgb(51, 38, 38);
+  color: rgb(255, 227, 103);
+}
+
+.newGame {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imageDice {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 18rem;
+  box-shadow: 0.5rem 1rem 2rem 0 rgb(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.rollDice {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.holdResult {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
